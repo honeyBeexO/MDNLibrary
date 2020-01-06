@@ -1,0 +1,10 @@
+{% extends 'catalog/base.html' %}
+{% block main_content %}
+<h2>
+      Sure you want to delete {{book}}?
+</h2>
+<form action="" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="Yes" class="btn submit-btn">
+</form>
+{% endblock main_content %}
